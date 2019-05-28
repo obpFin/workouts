@@ -1,4 +1,13 @@
 <div class="app">
-  <app-sidebar></app-sidebar>
+  <div class="content">
+      <app-sidebar></app-sidebar>
+      <div class="schedules column is-8">
+        <p>schedule</p>
+        <app-schedule
+        *ngFor="let sch of schedules"
+        [scheduleElement] = "sch"
+        ></app-schedule>
+      </div>
+  </div>
   <app-footer></app-footer>
 </div>

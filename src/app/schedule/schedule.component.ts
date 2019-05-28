@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Move } from '../shared/move.model'
 
 @Component({
@@ -7,8 +7,10 @@ import { Move } from '../shared/move.model'
   styleUrls: ['./schedule.component.sass']
 })
 export class ScheduleComponent implements OnInit {
-
-  constructor(moves: Array<Move>) { }
+  moves: Array<Move> 
+  @Input('scheduleElement') schedule: {name: string};
+  
+  constructor() { }
 
   ngOnInit() {
   }
