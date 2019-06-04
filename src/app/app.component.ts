@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'workouts';
-  schedules = [{name: 'sch 1'}, {name: 'sch 2'}];
 }

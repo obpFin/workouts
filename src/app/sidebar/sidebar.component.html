@@ -8,28 +8,14 @@
           <a class="button is-info">Add</a>
         </div>
       </div>
-    <ul class="menu-list">
-      <li>
-        <a href="#">
-          <span class="icon"><i class="fa fa-table"></i></span> schedules
-        </a>
+      <span class="icon"><i class="fa fa-table"></i></span> schedules
 
-        <ul>
-          <li>
-            <a href="#">
-              <span class="icon is-small"><i class="fa fa-link"></i></span> Link1
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon is-small"><i class="fa fa-link"></i></span> Link2
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#" class="">
-          <span class="icon"><i class="fa fa-info"></i></span> About
+    <ul class="menu-list">
+      <li
+      *ngFor="let s of schedules"
+      >
+        <a href="#">
+          <span class="icon is-small"><i class="fa fa-link"></i></span>{{s.name}}
         </a>
       </li>
     </ul>
