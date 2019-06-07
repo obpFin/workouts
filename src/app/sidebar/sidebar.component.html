@@ -2,17 +2,17 @@
     <h2 class="title">Workouts</h2>
     <div class="field has-addons">
         <div class="control">
-          <input class="input" type="text" placeholder="Add Schdedule">
+          <input #scheduleName class="input" type="text" placeholder="Add Schdedule">
         </div>
         <div class="control">
-          <a class="button is-info">Add</a>
+          <a (click)="onAddSchedule()" class="button is-info">Add</a>
         </div>
       </div>
       <span class="icon"><i class="fa fa-table"></i></span> schedules
 
     <ul class="menu-list">
       <li
-      *ngFor="let s of schedules"
+      *ngFor="let s of scheduleLinks"
       >
         <a href="#">
           <span class="icon is-small"><i class="fa fa-link"></i></span>{{s.name}}
