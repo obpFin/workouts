@@ -1,4 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -12,10 +13,11 @@ import { SchedulesService } from './schedules.service';
     AppComponent,
     FooterComponent,
     SidebarComponent,
-    ScheduleComponent
+    ScheduleComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [SchedulesService],
   bootstrap: [AppComponent]
