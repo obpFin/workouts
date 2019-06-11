@@ -1,11 +1,12 @@
-import { Injectable, ElementRef } from '@angular/core';
+import { Injectable, ElementRef } from '@angular/core'
 
+import { Schedule } from './shared/schedule.model'
 import { utils } from './shared/utils'
 
 @Injectable()
 export class SchedulesService {
   selectedSchedule: number
-  schedules: {id: number, name: string}[] = [
+  schedules: Schedule[] = [
     {
       id: 1,
       name: 'sch 1',
